@@ -106,26 +106,7 @@ public:
 		}
 	}
 
-	int removeDuplicates(vector<int>& nums) {
-		vector<int>::iterator pint = nums.begin();
-		int tmp;
-		int count = 0;
 
-		while (pint <= nums.cend()) {
-			tmp = *pint;
-			if (*pint == tmp) {
-				pint++;
-				continue;
-			}
-			else {
-				tmp = *pint;
-				count++;
-				nums[count] = *pint;
-				pint++;
-			}
-		}
-		return count;
-	}
 };
 
 class base1 {
